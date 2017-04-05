@@ -10,7 +10,6 @@ import UIKit
 
 class TopPlacesViewController: UIViewController {
     
-    //var currentPlaceInfo: PlaceInfo!
     var placeInfo = [PlaceInfo]()
     
     @IBOutlet var tableView: UITableView!
@@ -20,18 +19,14 @@ class TopPlacesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         tableView.dataSource = self
         tableView.delegate = self
-        
         topPlaceAPI.showPlace()
-        
-        
-        
-        // Do any additional setup after loading the view.
+
     }
     
 }
+
 extension TopPlacesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,12 +36,17 @@ extension TopPlacesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = placeInfo[indexPath.row].woe_name
+        
         return cell
     }
     
 }
 
 extension TopPlacesViewController: UITableViewDelegate {
-
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let selectedPlace = placeInfo[indexPath.row]
+//    }
     
 }
+
+

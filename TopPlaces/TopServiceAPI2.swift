@@ -10,7 +10,7 @@ import Foundation
 
 class TopPlaceSerAPI {
     
-    func showPlace(){
+    func showPlace() {
         let url = buildUrl()
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -56,10 +56,9 @@ class TopPlaceSerAPI {
         print(result)
         return result
     }
+    
     ///////////////////////////
-    
-    
-    
+
     struct Constrans {
         static let serviceURL = "https://api.flickr.com/services/rest/"
         static let method = "method"
