@@ -13,6 +13,8 @@
 		361BD4EE1E92D43D008BFD31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 361BD4EC1E92D43D008BFD31 /* LaunchScreen.storyboard */; };
 		361BD4F61E92D469008BFD31 /* TopPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361BD4F51E92D469008BFD31 /* TopPlacesViewController.swift */; };
 		361BD4F81E92D481008BFD31 /* TopPlacesAPISer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361BD4F71E92D481008BFD31 /* TopPlacesAPISer.swift */; };
+		36BA6DAB1E93DCBC00DDB39C /* TopServiceAPI2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA6DAA1E93DCBC00DDB39C /* TopServiceAPI2.swift */; };
+		36BA6DAD1E93E16C00DDB39C /* PlaceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA6DAC1E93E16C00DDB39C /* PlaceInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +26,8 @@
 		361BD4EF1E92D43D008BFD31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		361BD4F51E92D469008BFD31 /* TopPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopPlacesViewController.swift; sourceTree = SOURCE_ROOT; };
 		361BD4F71E92D481008BFD31 /* TopPlacesAPISer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopPlacesAPISer.swift; sourceTree = "<group>"; };
-		361BD4F91E92DB94008BFD31 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		36BA6DAA1E93DCBC00DDB39C /* TopServiceAPI2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopServiceAPI2.swift; sourceTree = "<group>"; };
+		36BA6DAC1E93E16C00DDB39C /* PlaceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +66,19 @@
 				361BD4EA1E92D43D008BFD31 /* Assets.xcassets */,
 				361BD4EC1E92D43D008BFD31 /* LaunchScreen.storyboard */,
 				361BD4EF1E92D43D008BFD31 /* Info.plist */,
-				361BD4F71E92D481008BFD31 /* TopPlacesAPISer.swift */,
-				361BD4F91E92DB94008BFD31 /* MyPlayground.playground */,
+				36BA6DAE1E93EA7D00DDB39C /* stuff */,
+				36BA6DAA1E93DCBC00DDB39C /* TopServiceAPI2.swift */,
+				36BA6DAC1E93E16C00DDB39C /* PlaceInfo.swift */,
 			);
 			path = TopPlaces;
+			sourceTree = "<group>";
+		};
+		36BA6DAE1E93EA7D00DDB39C /* stuff */ = {
+			isa = PBXGroup;
+			children = (
+				361BD4F71E92D481008BFD31 /* TopPlacesAPISer.swift */,
+			);
+			name = stuff;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +156,8 @@
 				361BD4F81E92D481008BFD31 /* TopPlacesAPISer.swift in Sources */,
 				361BD4F61E92D469008BFD31 /* TopPlacesViewController.swift in Sources */,
 				361BD4E41E92D43D008BFD31 /* AppDelegate.swift in Sources */,
+				36BA6DAD1E93E16C00DDB39C /* PlaceInfo.swift in Sources */,
+				36BA6DAB1E93DCBC00DDB39C /* TopServiceAPI2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +321,7 @@
 				361BD4F41E92D43D008BFD31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

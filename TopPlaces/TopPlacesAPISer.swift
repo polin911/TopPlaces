@@ -22,11 +22,11 @@ class TopServiceAPISer {
         static let apiKey = "2b2c9f8abc28afe8d7749aee246d951c"
         static let placeTypeID = "12"
         static let date1 = "2017-04-02"
-    }
+    
     
         static func buildWithURL(methodName: String) -> String {
-            return Constrans.serviceURL + "?" + Constrans.method + "=" + methodName + "&api_key=" + Constrans.apiKey + "&place_type_id=" + Constrans.placeTypeID + "&date=" + Constrans.date1 + "&place_id=1" + "&format=json&nojsoncallback=1"
-
+            return serviceURL + "?" + method + "=" + methodName + "&api_key=" + apiKey + "&place_type_id=" + placeTypeID + "&date=" + date1 + "&place_id=1" + "&format=json&nojsoncallback=1"
+    }
         
     }
     
