@@ -7,19 +7,12 @@
 //
 
 import Foundation
-class TopSerAPI2 {
-    
-    
-   let urlStr = "https://api.flickr.com/services/rest/?method=flickr.places.getTopPlacesList&api_key=9193644d567be56b3f8c7c6fe1d1f344&place_type_id=12&date=&place_id=&format=json&nojsoncallback=1"
-   
-   // let nsURl = NSURL(fileURLWithPath: url)
-    let session2 = URLSession(configuration: URLSessionConfiguration.default)
-    
+
+class TopPlaceSerAPI {
     
     func showPlace(){
         let url = buildUrl()
-            
-            
+        
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard error == nil else {
                 return
@@ -35,28 +28,15 @@ class TopSerAPI2 {
                     return
             }
             let place = self.buildTopPlace(from: dictionary)
-                  print("a vot i place \(place)")
+            print("a vot i place \(place)")
             
             guard place.count > 0 else {
-                            return
-                        }
+                return
+            }
         }
         task.resume()
         
-//        guard let data = try? Data(contentsOf: url as! URL),
-//        let jsonObj = try? JSONSerialization.jsonObject(with: data, options: []),
-//        let dictionary = jsonObj as? [String:Any] else {
-//            return[]
-//        }
-//        let place = self.buildTopPlace(from: dictionary)
-//        print("a vot i place \(place)")
-//        
-//        guard place.count > 0 else {
-//            return[]
-//        }
-//        task.resume()
-//        print(place)
-//        return place
+        
     }
     
     func buildTopPlace(from dictionary: [String:Any]) -> [PlaceInfo] {
